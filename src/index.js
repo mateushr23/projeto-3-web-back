@@ -19,6 +19,8 @@ app.use(
   express.static(path.resolve(__dirname, "..", "tmp", "uploads"))
 );
 
+app.use('usuario', Usuarios);
+
 app.use(require("./routes"));
 
 app.listen(3000);
