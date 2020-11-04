@@ -12,6 +12,8 @@ mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
 });
 
+const Usuarios = require('./models/usuarioModel');
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
